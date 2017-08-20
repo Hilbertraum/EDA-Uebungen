@@ -1,0 +1,18 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+ENTITY tb_piso IS
+	PORT(  );
+END ENTITY;
+
+ARCHITECTURE testbench OF tb_piso IS
+	-- Komponentendeklarationen --
+	
+	-- Signaldeklarationen --
+
+BEGIN
+	-- Instanziierungen --
+	
+	--  --
+	
+END ARCHITECTURE;

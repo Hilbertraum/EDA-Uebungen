@@ -1,0 +1,65 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+
+ENTITY THREE_DIGITS IS
+	PORT( 
+			CLK 		: 	IN 	std_logic;
+			--CLK_50	: 	IN		std_logic;
+			INIT 		: 	IN 	std_logic;
+			SEVENSEG1	: 	OUT 	std_logic_vector(3 DOWNTO 0);
+			SEVENSEG2	: 	OUT 	std_logic_vector(3 DOWNTO 0);
+			SEVENSEG3	: 	OUT 	std_logic_vector(3 DOWNTO 0) 
+			
+	);
+			
+END ENTITY;
+
+
+
+ARCHITECTURE structural OF THREE_DIGITS IS
+	
+	-- Components
+
+	COMPONENT bcd_counter IS
+		PORT ( 	
+			CLK :  in std_logic;
+			RESET : in std_logic;
+			DIGIT0: out std_logic_vector(3 downto 0)
+			DIGIT1: out std_logic_vector(3 downto 0)
+			DIGIT2: out std_logic_vector(3 downto 0));
+	END COMPONENT;
+	
+	COMPONENT sevenseg IS
+		PORT ( D : IN std_logic_vector(3 DOWNTO 0);
+				 O : OUT std_logic_vector(6 DOWNTO 0) );
+	END COMPONENT;
+	
+	
+
+	
+	-- Signals
+	SIGNAL d0 		: std_logic_vector(3 DOWNTO 0);
+	SIGNAL d1 		: std_logic_vector(3 DOWNTO 0);
+	SIGNAL d2 		: std_logic_vector(3 DOWNTO 0);	
+	
+	
+BEGIN
+	
+	-- Instanciations
+	
+	bcd_counter_instance : bcd_counter
+		PORT MAP( CLK, RESET, d0, d1, d2);
+	
+	sevenseg1 : sevenseg
+		PORT MAP( d0, SEVENSEG1);
+	sevenseg2 : sevenseg
+		PORT MAP( d1, SEVENSEG2);
+	sevenseg3 : sevenseg
+		PORT MAP( d2, SEVENSEG3);
+	
+
+	
+
+		
+END ARCHITECTURE;

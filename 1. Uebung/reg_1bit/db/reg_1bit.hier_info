@@ -1,0 +1,10 @@
+|reg_1bit
+ld => q_i.ENA
+d0 => q_i.DATAIN
+clk => q_i.CLK
+clk => q_o.CLK
+clr => q_o.ACLR
+clr => q_i.ACLR
+q0 <> q0
+
+

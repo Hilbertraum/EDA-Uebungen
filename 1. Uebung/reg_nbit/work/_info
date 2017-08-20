@@ -1,0 +1,88 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/altera/14.1
+Ereg_nbit
+Z0 w1494584337
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z3 dC:/Users/Banandi/Desktop/Uni/EDA/Uebungen/1. Uebung/reg_nbit
+Z4 8C:/Users/Banandi/Desktop/Uni/EDA/Uebungen/1. Uebung/reg_nbit/reg_nbit.vhd
+Z5 FC:/Users/Banandi/Desktop/Uni/EDA/Uebungen/1. Uebung/reg_nbit/reg_nbit.vhd
+l0
+L6
+VT:4IE>9eOXPlHT14`aJTI3
+!s100 zP>fO2z@5b=`C54`MKX743
+Z6 OV;C;10.3c;59
+32
+Z7 !s110 1494589517
+!i10b 1
+Z8 !s108 1494589517.105000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Banandi/Desktop/Uni/EDA/Uebungen/1. Uebung/reg_nbit/reg_nbit.vhd|
+Z10 !s107 C:/Users/Banandi/Desktop/Uni/EDA/Uebungen/1. Uebung/reg_nbit/reg_nbit.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1
+Abehavorial
+R1
+R2
+Z13 DEx4 work 8 reg_nbit 0 22 T:4IE>9eOXPlHT14`aJTI3
+l18
+L14
+Z14 Vf1;V9RBmR;DEGRLCa[<:[3
+Z15 !s100 dzQ;N;23DHJj3H1chcz5m3
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Etb_reg_nbit
+Z16 w1494589500
+R1
+R2
+R3
+Z17 8C:/Users/Banandi/Desktop/Uni/EDA/Uebungen/1. Uebung/reg_nbit/Testbench/tb_reg_nbit.vhd
+Z18 FC:/Users/Banandi/Desktop/Uni/EDA/Uebungen/1. Uebung/reg_nbit/Testbench/tb_reg_nbit.vhd
+l0
+L6
+VTa[8@FAn75j3JdQgj:jfi0
+!s100 jMXVJgnWL0A?i^NM4PCVg0
+R6
+32
+Z19 !s110 1494589516
+!i10b 1
+Z20 !s108 1494589516.060000
+Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Banandi/Desktop/Uni/EDA/Uebungen/1. Uebung/reg_nbit/Testbench/tb_reg_nbit.vhd|
+Z22 !s107 C:/Users/Banandi/Desktop/Uni/EDA/Uebungen/1. Uebung/reg_nbit/Testbench/tb_reg_nbit.vhd|
+!i113 1
+R11
+R12
+Atestbench
+R1
+R2
+DEx4 work 11 tb_reg_nbit 0 22 Ta[8@FAn75j3JdQgj:jfi0
+l25
+L10
+Vaz5Bi7Ie38IiV4@<VH=Wj1
+!s100 b>4:LB[;fj5L_^7n;0:dD3
+R6
+32
+R19
+!i10b 1
+R20
+R21
+R22
+!i113 1
+R11
+R12

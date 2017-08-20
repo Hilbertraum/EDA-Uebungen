@@ -1,0 +1,12 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+ENTITY ripple_carry_adder IS
+	PORT ( 	x, y, c_i : IN std_logic;
+				c_o, s : OUT std_logic_1164 );
+END ENTITY;
+
+ARCHITECTURE behavorial OF ripple_carry_adder IS
+BEGIN
+
+END ARCHITECTURE;

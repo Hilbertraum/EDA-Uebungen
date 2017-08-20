@@ -1,0 +1,42 @@
+set_location_assignment PIN_Y23 -to INIT
+set_location_assignment PIN_J22 -to SEVENSEG1[1]
+set_location_assignment PIN_L25 -to SEVENSEG1[2]
+set_location_assignment PIN_L26 -to SEVENSEG1[3]
+set_location_assignment PIN_E17 -to SEVENSEG1[4]
+set_location_assignment PIN_F22 -to SEVENSEG1[5]
+set_location_assignment PIN_G18 -to SEVENSEG1[6]
+set_location_assignment PIN_U24 -to SEVENSEG2[0]
+set_location_assignment PIN_U23 -to SEVENSEG2[1]
+set_location_assignment PIN_W25 -to SEVENSEG2[2]
+set_location_assignment PIN_W21 -to SEVENSEG2[4]
+set_location_assignment PIN_Y22 -to SEVENSEG2[5]
+set_location_assignment PIN_M24 -to SEVENSEG2[6]
+set_location_assignment PIN_W28 -to SEVENSEG3[0]
+set_location_assignment PIN_W27 -to SEVENSEG3[1]
+set_location_assignment PIN_Y26 -to SEVENSEG3[2]
+set_location_assignment PIN_W26 -to SEVENSEG3[3]
+set_location_assignment PIN_Y25 -to SEVENSEG3[4]
+set_location_assignment PIN_AA26 -to SEVENSEG3[5]
+set_location_assignment PIN_AA25 -to SEVENSEG3[6]
+set_location_assignment PIN_M23 -to CLK
+set_location_assignment PIN_H22 -to SEVENSEG1[0]
+set_location_assignment PIN_W22 -to SEVENSEG2[3]
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE115F29C8
+set_global_assignment -name TOP_LEVEL_ENTITY THREE_DIGITS
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 14.1.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "13:14:30  JULY 07, 2017"
+set_global_assignment -name LAST_QUARTUS_VERSION 14.1.0
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name VHDL_FILE bcd_counter.vhd
+set_global_assignment -name VHDL_FILE sevenseg.vhd
+set_global_assignment -name VHDL_FILE THREE_DIGITS.vhd
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top

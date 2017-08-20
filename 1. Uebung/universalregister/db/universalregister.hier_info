@@ -1,0 +1,17 @@
+|universalregister
+RST => ~NO_FANOUT~
+S[0] => ~NO_FANOUT~
+S[1] => ~NO_FANOUT~
+P[0] => ~NO_FANOUT~
+P[1] => ~NO_FANOUT~
+P[2] => ~NO_FANOUT~
+P[3] => ~NO_FANOUT~
+SHR => ~NO_FANOUT~
+SHL => ~NO_FANOUT~
+CLK => ~NO_FANOUT~
+Q[0] << <GND>
+Q[1] << <GND>
+Q[2] << <GND>
+Q[3] << <GND>
+
+

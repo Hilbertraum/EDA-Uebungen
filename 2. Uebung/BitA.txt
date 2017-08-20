@@ -1,0 +1,50 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity fsm1 is 
+port (st: in std_logic_vector(1 downto 0);
+      clock: in std_logic_vector(0 downto 0);
+      green: out std_logic_vector(0 downto 0);
+      red: out std_logic_vector (8 downto 0));
+end fsm1;
+
+architecture behavior of fsm1 is
+    component dflipflop 
+    port (D, clk, reset, set: in std_logic; 
+            Q: out std_logic);
+    end component;
+
+    signal clk, rst, e, z: std_logic;
+    signal Q, De: std_logic_vector(8 downto 0);
+
+	begin
+	
+	clk <= clock(0);
+	rst <= st(0);
+	e <= st(1);
+	
+   De(0) <= '0';
+   dff1: dflipflop port map (De(0), clk, '1', rst, Q(0));
+   De(1) <= (Q(0) or Q(5) or Q(6) or Q(7) or Q(8)) and not (e);
+   dff2: dflipflop port map (De(1), clk, rst, '1', Q(1));
+   De(2) <= (Q(1) and not (e));
+   dff3: dflipflop port map (De(2), clk, rst, '1', Q(2));
+   De(3) <= (Q(2) and not (e));
+   dff4: dflipflop port map (De(3), clk, rst, '1', Q(3));
+   De(4) <= (Q(3) or Q(4)) and not (e);
+   dff5: dflipflop port map (De(4), clk, rst, '1', Q(4));
+   De(5) <= (Q(0) or Q(1) or Q(2) or Q(3) or Q(4)) and (e);
+   dff6: dflipflop port map (De(5), clk, rst, '1', Q(5));
+   De(6) <= Q(5) and (e);
+   dff7: dflipflop port map (De(6), clk, rst, '1', Q(6));
+   De(7) <= Q(6) and (e);
+   dff8: dflipflop port map (De(7), clk, rst, '1', Q(7));
+   De(8) <= (Q(7) or Q(8)) and (e); 
+   dff9: dflipflop port map (De(8), clk, rst, '1', Q(8));
+
+	z <= Q(4) or Q(8);
+	red(8 downto 0) <= Q(8 downto 0);
+	green(0) <= z;
+
+
+end behavior;

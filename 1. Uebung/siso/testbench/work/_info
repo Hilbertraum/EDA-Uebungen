@@ -1,0 +1,88 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/Banandi/Desktop/Uni/DT/Digitaltechnik/Laboruebungen/Uebung2/tb_even_par_gen_and_check
+Esiso
+Z0 w1494865424
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z3 dC:/Users/Banandi/Desktop/Uni/EDA/Uebungen/1. Uebung/siso/testbench
+Z4 8C:/Users/Banandi/Desktop/Uni/EDA/Uebungen/1. Uebung/siso/siso.vhd
+Z5 FC:/Users/Banandi/Desktop/Uni/EDA/Uebungen/1. Uebung/siso/siso.vhd
+l0
+L6
+V>mKbGC1ZdVdJ6bN<4Z7HQ0
+!s100 Z^C1Z9NU>?k;K[XzANzMT0
+Z6 OV;C;10.3c;59
+32
+Z7 !s110 1494866008
+!i10b 1
+Z8 !s108 1494866008.689000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Banandi/Desktop/Uni/EDA/Uebungen/1. Uebung/siso/siso.vhd|
+Z10 !s107 C:/Users/Banandi/Desktop/Uni/EDA/Uebungen/1. Uebung/siso/siso.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1
+Abehavorial
+R1
+R2
+DEx4 work 4 siso 0 22 >mKbGC1ZdVdJ6bN<4Z7HQ0
+l18
+L12
+V`QYc4_8kS7aZf5=<FD@Al0
+!s100 ]SS;L@L`n@Kbc>QP]5YZE1
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Etb_siso
+Z13 w1494865930
+R1
+R2
+R3
+Z14 8C:/Users/Banandi/Desktop/Uni/EDA/Uebungen/1. Uebung/siso/testbench/tb_siso.vhd
+Z15 FC:/Users/Banandi/Desktop/Uni/EDA/Uebungen/1. Uebung/siso/testbench/tb_siso.vhd
+l0
+L6
+V2_`9MeEQGHg0:IPf?2K9C3
+!s100 SN`SJDW]z@cmnY1J4S[Eh2
+R6
+32
+R7
+!i10b 1
+Z16 !s108 1494866008.123000
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Banandi/Desktop/Uni/EDA/Uebungen/1. Uebung/siso/testbench/tb_siso.vhd|
+Z18 !s107 C:/Users/Banandi/Desktop/Uni/EDA/Uebungen/1. Uebung/siso/testbench/tb_siso.vhd|
+!i113 1
+R11
+R12
+Atestbench
+R1
+R2
+DEx4 work 7 tb_siso 0 22 2_`9MeEQGHg0:IPf?2K9C3
+l22
+L10
+V??aYhCUUhRV@X=CJfWUkb0
+!s100 Wd8_Tg6Vl[oHFZch@BZ5?0
+R6
+32
+R7
+!i10b 1
+R16
+R17
+R18
+!i113 1
+R11
+R12

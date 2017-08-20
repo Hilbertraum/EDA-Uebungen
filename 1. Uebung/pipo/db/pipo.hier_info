@@ -1,0 +1,31 @@
+|pipo
+clk => q_i[0].CLK
+clk => q_i[1].CLK
+clk => q_i[2].CLK
+clk => q_i[3].CLK
+clk => q_o[0].CLK
+clk => q_o[1].CLK
+clk => q_o[2].CLK
+clk => q_o[3].CLK
+clr => q_o[0].ACLR
+clr => q_o[1].ACLR
+clr => q_o[2].ACLR
+clr => q_o[3].ACLR
+clr => q_i[0].ACLR
+clr => q_i[1].ACLR
+clr => q_i[2].ACLR
+clr => q_i[3].ACLR
+ld => q_i[0].ENA
+ld => q_i[1].ENA
+ld => q_i[2].ENA
+ld => q_i[3].ENA
+d[0] => q_i[0].DATAIN
+d[1] => q_i[1].DATAIN
+d[2] => q_i[2].DATAIN
+d[3] => q_i[3].DATAIN
+q[0] <= q_o[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q_o[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q_o[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q_o[3].DB_MAX_OUTPUT_PORT_TYPE
+
+

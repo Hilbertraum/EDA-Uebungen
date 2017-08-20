@@ -1,0 +1,71 @@
+{C:/Users/Banandi/Desktop/Uni/EDA/Uebungen/3. Übung BSD-Counter und Codierer/bcd_counter_and_encoder/bcd_counter_and_encoder.vhd} {0 {vcom -work work -2002 -explicit -stats=none {C:/Users/Banandi/Desktop/Uni/EDA/Uebungen/3. Übung BSD-Counter und Codierer/bcd_counter_and_encoder/bcd_counter_and_encoder.vhd}
+Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+-- Loading package STANDARD
+init_dbinfo() DATABASE ERROR: (sqlite3_open C:/Users/Banandi/Desktop/Uni/EDA/Uebungen/3. Übung BSD-Counter und Codierer/bcd_counter_and_encoder/work/_lib.qdb): unable to open database file
+mtilibWrite(): Unexpected null object encountered
+** Fatal: (vcom-9) Problem while writing token file "C:/Users/Banandi/Desktop/Uni/EDA/Uebungen/3. Übung BSD-Counter und Codierer/bcd_counter_and_encoder/work/_temp/vcomw0617j".
+
+Das System kann den angegebenen Pfad nicht finden. (GetLastError() = 3)
+** Error: C:/Users/Banandi/Desktop/Uni/EDA/Uebungen/3. Übung BSD-Counter und Codierer/bcd_counter_and_encoder/bcd_counter_and_encoder.vhd(1): VHDL Compiler exiting
+
+} {9.0 10.0} {}} {C:/Users/Banandi/Desktop/Uni/EDA/Uebungen/3. Übung BSD-Counter und Codierer/bcd_counter_and_encoder/set_ffs_unit.vhd} {0 {vcom -work work -2002 -explicit -stats=none {C:/Users/Banandi/Desktop/Uni/EDA/Uebungen/3. Übung BSD-Counter und Codierer/bcd_counter_and_encoder/set_ffs_unit.vhd}
+Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+-- Loading package STANDARD
+init_dbinfo() DATABASE ERROR: (sqlite3_open C:/Users/Banandi/Desktop/Uni/EDA/Uebungen/3. Übung BSD-Counter und Codierer/bcd_counter_and_encoder/work/_lib.qdb): unable to open database file
+mtilibWrite(): Unexpected null object encountered
+** Fatal: (vcom-9) Problem while writing token file "C:/Users/Banandi/Desktop/Uni/EDA/Uebungen/3. Übung BSD-Counter und Codierer/bcd_counter_and_encoder/work/_temp/vcom03e6fe".
+
+Das System kann den angegebenen Pfad nicht finden. (GetLastError() = 3)
+** Error: C:/Users/Banandi/Desktop/Uni/EDA/Uebungen/3. Übung BSD-Counter und Codierer/bcd_counter_and_encoder/set_ffs_unit.vhd(4): VHDL Compiler exiting
+
+} {9.0 10.0} {}} {C:/Users/Banandi/Desktop/Uni/EDA/Uebungen/3. Übung BSD-Counter und Codierer/bcd_counter_and_encoder/reg_nbit.vhd} {0 {vcom -work work -2002 -explicit -stats=none {C:/Users/Banandi/Desktop/Uni/EDA/Uebungen/3. Übung BSD-Counter und Codierer/bcd_counter_and_encoder/reg_nbit.vhd}
+Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+-- Loading package STANDARD
+init_dbinfo() DATABASE ERROR: (sqlite3_open C:/Users/Banandi/Desktop/Uni/EDA/Uebungen/3. Übung BSD-Counter und Codierer/bcd_counter_and_encoder/work/_lib.qdb): unable to open database file
+mtilibWrite(): Unexpected null object encountered
+** Fatal: (vcom-9) Problem while writing token file "C:/Users/Banandi/Desktop/Uni/EDA/Uebungen/3. Übung BSD-Counter und Codierer/bcd_counter_and_encoder/work/_temp/vcom3my05g".
+
+Das System kann den angegebenen Pfad nicht finden. (GetLastError() = 3)
+** Error: C:/Users/Banandi/Desktop/Uni/EDA/Uebungen/3. Übung BSD-Counter und Codierer/bcd_counter_and_encoder/reg_nbit.vhd(2): VHDL Compiler exiting
+
+} {9.0 10.0} {}} {C:/Users/Banandi/Desktop/Uni/EDA/Uebungen/3. Übung BSD-Counter und Codierer/bcd_counter_and_encoder/bcd_to_aiken_and_gray.vhd} {0 {vcom -work work -2002 -explicit -stats=none {C:/Users/Banandi/Desktop/Uni/EDA/Uebungen/3. Übung BSD-Counter und Codierer/bcd_counter_and_encoder/bcd_to_aiken_and_gray.vhd}
+Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+-- Loading package STANDARD
+init_dbinfo() DATABASE ERROR: (sqlite3_open C:/Users/Banandi/Desktop/Uni/EDA/Uebungen/3. Übung BSD-Counter und Codierer/bcd_counter_and_encoder/work/_lib.qdb): unable to open database file
+mtilibWrite(): Unexpected null object encountered
+** Fatal: (vcom-9) Problem while writing token file "C:/Users/Banandi/Desktop/Uni/EDA/Uebungen/3. Übung BSD-Counter und Codierer/bcd_counter_and_encoder/work/_temp/vcombqszwm".
+
+Das System kann den angegebenen Pfad nicht finden. (GetLastError() = 3)
+** Error: C:/Users/Banandi/Desktop/Uni/EDA/Uebungen/3. Übung BSD-Counter und Codierer/bcd_counter_and_encoder/bcd_to_aiken_and_gray.vhd(1): VHDL Compiler exiting
+
+} {9.0 10.0} {}} {C:/Users/Banandi/Desktop/Uni/EDA/Uebungen/3. Übung BSD-Counter und Codierer/bcd_counter_and_encoder/jk_ff.vhd} {0 {vcom -work work -2002 -explicit -stats=none {C:/Users/Banandi/Desktop/Uni/EDA/Uebungen/3. Übung BSD-Counter und Codierer/bcd_counter_and_encoder/jk_ff.vhd}
+Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+-- Loading package STANDARD
+init_dbinfo() DATABASE ERROR: (sqlite3_open C:/Users/Banandi/Desktop/Uni/EDA/Uebungen/3. Übung BSD-Counter und Codierer/bcd_counter_and_encoder/work/_lib.qdb): unable to open database file
+mtilibWrite(): Unexpected null object encountered
+** Fatal: (vcom-9) Problem while writing token file "C:/Users/Banandi/Desktop/Uni/EDA/Uebungen/3. Übung BSD-Counter und Codierer/bcd_counter_and_encoder/work/_temp/vcom5wt0v9".
+
+Das System kann den angegebenen Pfad nicht finden. (GetLastError() = 3)
+** Error: C:/Users/Banandi/Desktop/Uni/EDA/Uebungen/3. Übung BSD-Counter und Codierer/bcd_counter_and_encoder/jk_ff.vhd(1): VHDL Compiler exiting
+
+} {9.0 10.0} {}} {C:/Users/Banandi/Desktop/Uni/EDA/Uebungen/3. Übung BSD-Counter und Codierer/bcd_counter_and_encoder/bcd_to_7seg.vhd} {0 {vcom -work work -2002 -explicit -stats=none {C:/Users/Banandi/Desktop/Uni/EDA/Uebungen/3. Übung BSD-Counter und Codierer/bcd_counter_and_encoder/bcd_to_7seg.vhd}
+Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+-- Loading package STANDARD
+init_dbinfo() DATABASE ERROR: (sqlite3_open C:/Users/Banandi/Desktop/Uni/EDA/Uebungen/3. Übung BSD-Counter und Codierer/bcd_counter_and_encoder/work/_lib.qdb): unable to open database file
+mtilibWrite(): Unexpected null object encountered
+** Fatal: (vcom-9) Problem while writing token file "C:/Users/Banandi/Desktop/Uni/EDA/Uebungen/3. Übung BSD-Counter und Codierer/bcd_counter_and_encoder/work/_temp/vcomxszcyt".
+
+Das System kann den angegebenen Pfad nicht finden. (GetLastError() = 3)
+** Error: C:/Users/Banandi/Desktop/Uni/EDA/Uebungen/3. Übung BSD-Counter und Codierer/bcd_counter_and_encoder/bcd_to_7seg.vhd(1): VHDL Compiler exiting
+
+} {9.0 10.0} {}} {C:/Users/Banandi/Desktop/Uni/EDA/Uebungen/3. Übung BSD-Counter und Codierer/bcd_counter_and_encoder/bcd_counter.vhd} {0 {vcom -work work -2002 -explicit -stats=none {C:/Users/Banandi/Desktop/Uni/EDA/Uebungen/3. Übung BSD-Counter und Codierer/bcd_counter_and_encoder/bcd_counter.vhd}
+Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+-- Loading package STANDARD
+init_dbinfo() DATABASE ERROR: (sqlite3_open C:/Users/Banandi/Desktop/Uni/EDA/Uebungen/3. Übung BSD-Counter und Codierer/bcd_counter_and_encoder/work/_lib.qdb): unable to open database file
+mtilibWrite(): Unexpected null object encountered
+** Fatal: (vcom-9) Problem while writing token file "C:/Users/Banandi/Desktop/Uni/EDA/Uebungen/3. Übung BSD-Counter und Codierer/bcd_counter_and_encoder/work/_temp/vcom4m156m".
+
+Das System kann den angegebenen Pfad nicht finden. (GetLastError() = 3)
+** Error: C:/Users/Banandi/Desktop/Uni/EDA/Uebungen/3. Übung BSD-Counter und Codierer/bcd_counter_and_encoder/bcd_counter.vhd(1): VHDL Compiler exiting
+
+} {9.0 10.0} {}}

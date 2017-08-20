@@ -1,0 +1,104 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2014 Altera Corporation. All rights reserved.
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, the Altera Quartus II License Agreement,
+# the Altera MegaCore Function License Agreement, or other 
+# applicable license agreement, including, without limitation, 
+# that your use is for the sole purpose of programming logic 
+# devices manufactured by Altera and sold by Altera or its 
+# authorized distributors.  Please refer to the applicable 
+# agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
+# Date created = 13:14:30  July 07, 2017
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		333a_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE115F29C8
+set_global_assignment -name TOP_LEVEL_ENTITY THREE_DIGITS
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 14.1.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "13:14:30  JULY 07, 2017"
+set_global_assignment -name LAST_QUARTUS_VERSION 14.1.0
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name VHDL_FILE bcd_counter.vhd
+set_global_assignment -name VHDL_FILE sevenseg.vhd
+set_global_assignment -name VHDL_FILE THREE_DIGITS.vhd
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_Y23 -to INIT
+set_location_assignment PIN_AA26 -to SEVENSEG1[1]
+set_location_assignment PIN_Y25 -to SEVENSEG1[2]
+set_location_assignment PIN_W26 -to SEVENSEG1[3]
+set_location_assignment PIN_Y26 -to SEVENSEG1[4]
+set_location_assignment PIN_W27 -to SEVENSEG1[5]
+set_location_assignment PIN_W28 -to SEVENSEG1[6]
+set_location_assignment PIN_V21 -to SEVENSEG2[0]
+set_location_assignment PIN_U21 -to SEVENSEG2[1]
+set_location_assignment PIN_AB20 -to SEVENSEG2[2]
+set_location_assignment PIN_AD24 -to SEVENSEG2[4]
+set_location_assignment PIN_AF23 -to SEVENSEG2[5]
+set_location_assignment PIN_Y19 -to SEVENSEG2[6]
+set_location_assignment PIN_AB19 -to SEVENSEG3[0]
+set_location_assignment PIN_AA19 -to SEVENSEG3[1]
+set_location_assignment PIN_AG21 -to SEVENSEG3[2]
+set_location_assignment PIN_AH21 -to SEVENSEG3[3]
+set_location_assignment PIN_AE19 -to SEVENSEG3[4]
+set_location_assignment PIN_AF19 -to SEVENSEG3[5]
+set_location_assignment PIN_AE18 -to SEVENSEG3[6]
+set_location_assignment PIN_Y2 -to CLK
+set_location_assignment PIN_AA25 -to SEVENSEG1[0]
+set_location_assignment PIN_AA21 -to SEVENSEG2[3]
+set_global_assignment -name VHDL_FILE output_files/scale_clock.vhd
+set_location_assignment PIN_AD18 -to SEVENSEG4[0]
+set_location_assignment PIN_AC18 -to SEVENSEG4[1]
+set_location_assignment PIN_AB18 -to SEVENSEG4[2]
+set_location_assignment PIN_AH19 -to SEVENSEG4[3]
+set_location_assignment PIN_AG19 -to SEVENSEG4[4]
+set_location_assignment PIN_AF18 -to SEVENSEG4[5]
+set_location_assignment PIN_AH18 -to SEVENSEG4[6]
+set_global_assignment -name VHDL_FILE bcd_counter24.vhd
+set_location_assignment PIN_AA17 -to SEVENSEG5[0]
+set_location_assignment PIN_AB16 -to SEVENSEG5[1]
+set_location_assignment PIN_AA16 -to SEVENSEG5[2]
+set_location_assignment PIN_AB17 -to SEVENSEG5[3]
+set_location_assignment PIN_AB15 -to SEVENSEG5[4]
+set_location_assignment PIN_AA15 -to SEVENSEG5[5]
+set_location_assignment PIN_AC17 -to SEVENSEG5[6]
+set_location_assignment PIN_AD17 -to SEVENSEG6[0]
+set_location_assignment PIN_AE17 -to SEVENSEG6[1]
+set_location_assignment PIN_AG17 -to SEVENSEG6[2]
+set_location_assignment PIN_AH17 -to SEVENSEG6[3]
+set_location_assignment PIN_AF17 -to SEVENSEG6[4]
+set_location_assignment PIN_AG18 -to SEVENSEG6[5]
+set_location_assignment PIN_AA14 -to SEVENSEG6[6]
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

@@ -1,0 +1,23 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+ENTITY tb_ripple_carry_adder_subber IS
+END ENTITY;
+
+ARCHITECTURE testbench OF tb_ripple_carry_adder_subber IS
+	-- Components
+	COMPONENT ripple_carry_adder IS
+	PORT ( 	x, y, c_i, mode  : IN std_logic; -- c_i... carry_in, mode=0 -> adder, mode=1 -> subber
+				c_o, s : OUT std_logic );	
+	END COMPONENT;
+	-- Signals
+	SIGNAL x : std_logic;
+	SIGNAL y : std_logic;
+	SIGNAL c_i : std_logic;
+	SIGNAL mode : std_logic;
+	SIGNAL c_o : std_logic;
+	SIGNAL s : std_logic;
+BEGIN
+	-- instanciation
+	dut : 
+END ARCHITECTURE;

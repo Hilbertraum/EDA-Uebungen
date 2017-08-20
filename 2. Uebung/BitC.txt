@@ -1,0 +1,86 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity fsm3 is
+ port( st: in std_logic_vector(1 downto 0);
+       clk: in std_logic_vector(0 downto 0);
+	   green: out std_logic_vector(0 downto 0);
+	   red: out std_logic_vector(8 downto 0));
+end fsm3;
+
+architecture fsm3_arc of fsm3 is
+ signal clock, rst, e, z: std_logic;
+ type state_type is (A, B, C, D, E, F, G, H, I);
+ signal Q, De : state_type;
+ 
+begin
+
+ clock <= clk(0);
+ rst <= st(0);
+ e <= st(1);
+
+ process(e, Q) --state table
+ begin
+   case Q is
+    when A => If (e = '0') then De <= B;
+	            else De <= F;
+				end if;
+	when B => If (e = '0') then De <= C;
+	            else De <= F;
+				end if;
+	when C => If (e = '0') then De <= D;
+	            else De <= F;
+				end if;
+	when D => If (e = '0') then De <= E;
+	            else De <= F;
+				end if;
+	when E => If (e = '0') then De <= E;
+	            else De <= F;
+				end if;
+	when F => If (e = '0') then De <= B;
+	            else De <= G;
+				end if;
+	when G => If (e = '0') then De <= B;
+	            else De <= H;
+				end if;
+	when H => If (e = '0') then De <= B;
+	            else De <= I;
+				end if;
+	when I => If (e = '0') then De <= B;
+	            else De <= I;
+				end if;
+	when others => De <= A;
+   end case;
+ end process;  --state table
+ 
+ process(clock) 
+ begin
+  If rising_edge(clock) then
+   If (rst = '0') then 
+    Q <= A;
+   else 
+    Q <= De;
+   end if;
+  end if;
+ end process;
+ 
+ z <= '1' when  ((Q = E) or (Q = I)) else '0';
+ green(0) <= z;
+ 
+ process(Q) --drive the red LEDs for each state
+ begin
+    red <= "000000000";
+	case Q is 
+	 when A => red <= "000000001";
+	 when B => red <= "000000010";
+	 when C => red <= "000000100";
+	 when D => red <= "000001000";
+	 when E => red <= "000010000";
+	 when F => red <= "000100000";
+	 when G => red <= "001000000";
+	 when H => red <= "010000000";
+	 when I => red <= "100000000";
+	end case;
+ end process;
+end architecture;
+   

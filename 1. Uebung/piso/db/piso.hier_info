@@ -1,0 +1,61 @@
+|piso
+rst => piso_steuereinheit:ctrl.rst
+clk => piso_steuereinheit:ctrl.clk
+clk => piso_register:reg.clk
+d[0] => piso_register:reg.d[0]
+d[1] => piso_register:reg.d[1]
+d[2] => piso_register:reg.d[2]
+d[3] => piso_register:reg.d[3]
+q_out << piso_register:reg.q_out
+
+
+|piso|piso_steuereinheit:ctrl
+rst => cnt[0].PRESET
+rst => cnt[1].PRESET
+rst => ld.OUTPUTSELECT
+rst => clr.DATAIN
+rst => ld~reg0.ENA
+rst => cnt[1].ENA
+rst => cnt[0].ENA
+clk => ld~reg0.CLK
+clk => cnt[0].CLK
+clk => cnt[1].CLK
+clr <= rst.DB_MAX_OUTPUT_PORT_TYPE
+ld <= ld~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|piso|piso_register:reg
+clr => transfer_or_shift.ACLR
+clr => q_s[0].ACLR
+clr => q_s[1].ACLR
+clr => q_s[2].ACLR
+clr => q_s[3].ACLR
+clr => q_m[0].ACLR
+clr => q_m[1].ACLR
+clr => q_m[2].ACLR
+clr => q_m[3].ACLR
+ld => q_m.OUTPUTSELECT
+ld => q_m.OUTPUTSELECT
+ld => q_m.OUTPUTSELECT
+ld => q_m.OUTPUTSELECT
+ld => q_s.OUTPUTSELECT
+ld => q_s.OUTPUTSELECT
+ld => q_s.OUTPUTSELECT
+ld => q_s.OUTPUTSELECT
+ld => transfer_or_shift.DATAIN
+clk => transfer_or_shift.CLK
+clk => q_s[0].CLK
+clk => q_s[1].CLK
+clk => q_s[2].CLK
+clk => q_s[3].CLK
+clk => q_m[0].CLK
+clk => q_m[1].CLK
+clk => q_m[2].CLK
+clk => q_m[3].CLK
+d[0] => q_m.DATAB
+d[1] => q_m.DATAB
+d[2] => q_m.DATAB
+d[3] => q_m.DATAB
+q_out <= q_s[3].DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,96 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+ENTITY bcd_counter IS
+	PORT ( 	CLK : IN std_logic;
+				INIT : IN std_logic;
+				D : IN std_logic_vector(3 DOWNTO 0);
+				AUSGANG : OUT std_logic_vector(3 DOWNTO 0) );
+END ENTITY;
+
+ARCHITECTURE structural OF bcd_counter IS
+	
+	-- Components
+	COMPONENT jk_ff IS
+		PORT ( J, K: IN std_logic;
+         RST: IN std_logic;
+         CLK: IN std_logic;
+         Q : OUT std_logic );
+	END COMPONENT;
+	
+	COMPONENT set_ffs_unit
+		PORT ( D : IN std_logic_vector(3 DOWNTO 0); -- Werte, auf die die FF-Ausgänge gesetzt werden sollen
+				 J : OUT std_logic_vector(3 DOWNTO 0); 
+				 K : OUT std_logic_vector(3 DOWNTO 0) );
+	END COMPONENT;
+
+	-- Signals
+	SIGNAL a , b : std_logic := '0' ;
+	SIGNAL j_e : std_logic_vector(3 DOWNTO 0); -- Ausgänge der set_ffs_unit
+	SIGNAL k_e : std_logic_vector(3 DOWNTO 0); -- Ausgänge der set_ffs_unit
+	SIGNAL j0, j1, j2, j3, k0, k1, k2, k3 : std_logic := '0'; -- J,K-ff-Eingänge
+	SIGNAL q : std_logic_vector(3 DOWNTO 0) := "0000"; -- Ausgänge der FFs
+
+BEGIN
+
+	ff0 : jk_ff
+		PORT MAP ( j0, k0, '0', CLK, q(0) );
+	ff1 : jk_ff
+		PORT MAP ( j1, k1, '0', CLK, q(1) );
+	ff2 : jk_ff
+		PORT MAP ( j2, k2, '0', CLK, q(2) );
+	ff3 : jk_ff
+		PORT MAP ( j3, k3, '0', CLK, q(3) );
+	set_ffs : set_ffs_unit
+		PORT MAP ( D, j_e, k_e);
+
+	
+	-- J,K-Eingänge ff0
+	WITH INIT SELECT
+		j0 <= '1' WHEN '0',
+				j_e(0) WHEN '1',
+				'X' WHEN OTHERS;
+		
+	WITH INIT SELECT
+		k0 <= '1' WHEN '0',
+				k_e(0) WHEN '1',
+				'X' WHEN OTHERS;	
+
+	-- J,K-Eingänge ff1	
+	WITH INIT SELECT
+		j1 <= q(0) WHEN '0',
+				j_e(1) WHEN '1',
+				'X' WHEN OTHERS;
+
+	WITH INIT SELECT
+		k1 <= q(0) WHEN '0',
+				k_e(1) WHEN '1',
+				'X' WHEN OTHERS;
+	
+	-- J,K-Eingänge ff2	
+	WITH INIT SELECT
+		j2 <= a WHEN '0',
+				j_e(2) WHEN '1',
+				'X' WHEN OTHERS;	
+
+	WITH INIT SELECT
+		k2 <= a WHEN '0',
+				k_e(2) WHEN '1',
+				'X' WHEN OTHERS;
+		
+	-- J,K-Eingänge ff3	
+	WITH INIT SELECT
+		j3 <= b WHEN '0',
+				j_e(3) WHEN '1',
+				'X' WHEN OTHERS;	
+
+	WITH INIT SELECT
+		k3 <= b WHEN '0',
+				k_e(3) WHEN '1',
+				'X' WHEN OTHERS;
+		
+	a <= q(0) and q(1);
+	b <= a and q(2);
+	AUSGANG <= q(3) & q(2) & q(1) & q(0);
+
+END ARCHITECTURE;

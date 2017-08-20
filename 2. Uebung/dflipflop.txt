@@ -1,0 +1,27 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity dflipflop is
+    port (D, clk, reset, set: in std_logic;
+        Q: out std_logic);
+end dflipflop;
+
+architecture behavior of dflipflop is
+
+begin
+
+process(clk)
+
+begin
+    if (rising_edge(clk)) then 
+      if (reset = '0') then
+        Q <= '0';
+		  elsif (set = '0') then
+		  Q <= '1';
+		else
+		  Q <= D;
+    end if;
+	 end if;
+end process;
+
+end behavior;

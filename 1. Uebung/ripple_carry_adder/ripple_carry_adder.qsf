@@ -1,0 +1,85 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2014 Altera Corporation. All rights reserved.
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, the Altera Quartus II License Agreement,
+# the Altera MegaCore Function License Agreement, or other 
+# applicable license agreement, including, without limitation, 
+# that your use is for the sole purpose of programming logic 
+# devices manufactured by Altera and sold by Altera or its 
+# authorized distributors.  Please refer to the applicable 
+# agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 14.1.0 Build 186 12/03/2014 SJ Web Edition
+# Date created = 02:31:35  June 13, 2017
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		ripple_carry_adder_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE115F29C8
+set_global_assignment -name TOP_LEVEL_ENTITY four_bit_ripple_carry_adder_subber
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 14.1.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "02:31:35  JUNE 13, 2017"
+set_global_assignment -name LAST_QUARTUS_VERSION 14.1.0
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name VHDL_FILE ripple_carry_adder_subber.vhd
+set_global_assignment -name VHDL_FILE tb_ripple_carry_adder.vhd
+set_global_assignment -name VHDL_FILE four_bit_ripple_carry_adder_subber.vhd
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VHDL_FILE tb_four_bit_ripple_carry_adder_subber.vhd
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_location_assignment PIN_AB28 -to x[0] -comment switch[0]
+set_location_assignment PIN_AC28 -to x[1] -comment switch[1]
+set_location_assignment PIN_AC27 -to x[2] -comment switch[2]
+set_location_assignment PIN_AD27 -to x[3] -comment switch[3]
+set_location_assignment PIN_AB27 -to y[0] -comment switch[4]
+set_location_assignment PIN_AC26 -to y[1] -comment switch[5]
+set_location_assignment PIN_AD26 -to y[2] -comment switch[6]
+set_location_assignment PIN_AB26 -to y[3] -comment switch[7]
+set_location_assignment PIN_AC25 -to c_i -comment switch[9]
+set_location_assignment PIN_G19 -to x_o[0] -comment "LED rot[0]"
+set_location_assignment PIN_F19 -to x_o[1] -comment "LED rot[1]"
+set_location_assignment PIN_E19 -to x_o[2] -comment "LED rot[2]"
+set_location_assignment PIN_F21 -to x_o[3] -comment "LED rot[3]"
+set_location_assignment PIN_F18 -to y_o[0] -comment "LED rot[4]"
+set_location_assignment PIN_E18 -to y_o[1] -comment "LED rot[5]"
+set_location_assignment PIN_J19 -to y_o[2] -comment "LED rot[6]"
+set_location_assignment PIN_H19 -to y_o[3] -comment "LED rot[7]"
+set_location_assignment PIN_E21 -to s[0] -comment "LED grün[0]"
+set_location_assignment PIN_E22 -to s[1] -comment "LED grün[1]"
+set_location_assignment PIN_E25 -to s[2] -comment "LED grün[2]"
+set_location_assignment PIN_E24 -to s[3] -comment "LED grün[3]"
+set_location_assignment PIN_H21 -to c_o -comment "LED grün[4]"
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

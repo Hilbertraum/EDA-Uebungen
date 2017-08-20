@@ -1,0 +1,43 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+
+entity fsm1_tb is
+end fsm1_tb;
+
+architecture fsm1_tbarc of fsm1_tb is
+ component fsm1 is
+ port(st: in std_logic_vector(1 downto 0);
+      clock: in std_logic_vector(0 downto 0);
+      green: out std_logic_vector(0 downto 0);
+      red: out std_logic_vector (8 downto 0));
+ end component;
+ 
+ signal st: std_logic_vector(1 downto 0) := "00";
+ signal clock: std_logic_vector(0 downto 0) := "0";
+ signal green: std_logic_vector(0 downto 0);
+ signal red: std_logic_vector (8 downto 0);
+ 
+ -- constant clk_period : time := 10ns;
+ 
+ begin
+ 
+ dut: fsm1 port map(
+          st => st,
+			 clock => clock,
+			 green => green,
+			 red => red);
+			 
+ 
+ st <= "01" after 20ns, "01" after 40ns, "01" after 60ns, "01" after 80ns, "11" after 100ns, "11" after 120ns, "11" after 140ns, "11" after 160ns, "11" after 180ns, "01" after 200ns; 
+ -- clock <= '0' after 10ns, '1' after 20ns, '0' after 30ns, '1' after 40ns, '0' after 50ns, '1' after 60ns, '0' after 70ns, '1' after 80ns, '0' after 90ns, '1' after 110ns, '0' after 120ns, '1' after 130ns 
+ 
+ clock_tb: process
+ begin
+    clock(0) <= '0';
+	 wait for 10ns;
+	 clock(0) <= '1';
+	 wait for 10ns;
+ end process;
+ 
+ end architecture;

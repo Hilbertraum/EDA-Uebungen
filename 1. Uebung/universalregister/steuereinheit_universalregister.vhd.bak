@@ -1,0 +1,11 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+ENTITY steuereinheit_universalregister IS
+END ENTITY;
+
+ARCHITECTURE behavorial OF steuereinheit_universalregister IS 
+
+BEGIN
+	
+END ARCHITECTURE;

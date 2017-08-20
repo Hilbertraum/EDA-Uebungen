@@ -1,0 +1,153 @@
+|four_bit_ripple_carry_adder_subber
+x[0] => ripple_carry_adder_subber:adder_subber_1.x
+x[0] => x_o[0].DATAIN
+x[1] => ripple_carry_adder_subber:adder_subber_2.x
+x[1] => x_o[1].DATAIN
+x[2] => ripple_carry_adder_subber:adder_subber_3.x
+x[2] => x_o[2].DATAIN
+x[3] => ripple_carry_adder_subber:adder_subber_4.x
+x[3] => x_o[3].DATAIN
+y[0] => ripple_carry_adder_subber:adder_subber_1.y
+y[0] => y_o[0].DATAIN
+y[1] => ripple_carry_adder_subber:adder_subber_2.y
+y[1] => y_o[1].DATAIN
+y[2] => ripple_carry_adder_subber:adder_subber_3.y
+y[2] => y_o[2].DATAIN
+y[3] => ripple_carry_adder_subber:adder_subber_4.y
+y[3] => y_o[3].DATAIN
+c_i => ripple_carry_adder_subber:adder_subber_1.c_i
+mode => ripple_carry_adder_subber:adder_subber_1.mode
+mode => ripple_carry_adder_subber:adder_subber_2.mode
+mode => ripple_carry_adder_subber:adder_subber_3.mode
+mode => ripple_carry_adder_subber:adder_subber_4.mode
+c_o << ripple_carry_adder_subber:adder_subber_4.c_o
+s[0] << ripple_carry_adder_subber:adder_subber_1.s
+s[1] << ripple_carry_adder_subber:adder_subber_2.s
+s[2] << ripple_carry_adder_subber:adder_subber_3.s
+s[3] << ripple_carry_adder_subber:adder_subber_4.s
+x_o[0] << x[0].DB_MAX_OUTPUT_PORT_TYPE
+x_o[1] << x[1].DB_MAX_OUTPUT_PORT_TYPE
+x_o[2] << x[2].DB_MAX_OUTPUT_PORT_TYPE
+x_o[3] << x[3].DB_MAX_OUTPUT_PORT_TYPE
+y_o[0] << y[0].DB_MAX_OUTPUT_PORT_TYPE
+y_o[1] << y[1].DB_MAX_OUTPUT_PORT_TYPE
+y_o[2] << y[2].DB_MAX_OUTPUT_PORT_TYPE
+y_o[3] << y[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|four_bit_ripple_carry_adder_subber|ripple_carry_adder_subber:adder_subber_1
+x => c_o.IN0
+x => c_o.IN0
+x => s.IN1
+x => s.IN0
+x => c_o.IN1
+x => s.IN0
+x => s.IN0
+y => c_o.IN0
+y => c_o.IN0
+y => c_o.IN1
+y => s.IN1
+y => s.IN0
+y => s.IN1
+y => s.IN1
+c_i => c_o.IN1
+c_i => c_o.IN1
+c_i => c_o.IN1
+c_i => s.IN1
+c_i => s.IN1
+c_i => s.IN1
+c_i => s.IN1
+c_i => s.IN1
+mode => c_o.OUTPUTSELECT
+mode => s.OUTPUTSELECT
+c_o <= c_o.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|four_bit_ripple_carry_adder_subber|ripple_carry_adder_subber:adder_subber_2
+x => c_o.IN0
+x => c_o.IN0
+x => s.IN1
+x => s.IN0
+x => c_o.IN1
+x => s.IN0
+x => s.IN0
+y => c_o.IN0
+y => c_o.IN0
+y => c_o.IN1
+y => s.IN1
+y => s.IN0
+y => s.IN1
+y => s.IN1
+c_i => c_o.IN1
+c_i => c_o.IN1
+c_i => c_o.IN1
+c_i => s.IN1
+c_i => s.IN1
+c_i => s.IN1
+c_i => s.IN1
+c_i => s.IN1
+mode => c_o.OUTPUTSELECT
+mode => s.OUTPUTSELECT
+c_o <= c_o.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|four_bit_ripple_carry_adder_subber|ripple_carry_adder_subber:adder_subber_3
+x => c_o.IN0
+x => c_o.IN0
+x => s.IN1
+x => s.IN0
+x => c_o.IN1
+x => s.IN0
+x => s.IN0
+y => c_o.IN0
+y => c_o.IN0
+y => c_o.IN1
+y => s.IN1
+y => s.IN0
+y => s.IN1
+y => s.IN1
+c_i => c_o.IN1
+c_i => c_o.IN1
+c_i => c_o.IN1
+c_i => s.IN1
+c_i => s.IN1
+c_i => s.IN1
+c_i => s.IN1
+c_i => s.IN1
+mode => c_o.OUTPUTSELECT
+mode => s.OUTPUTSELECT
+c_o <= c_o.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|four_bit_ripple_carry_adder_subber|ripple_carry_adder_subber:adder_subber_4
+x => c_o.IN0
+x => c_o.IN0
+x => s.IN1
+x => s.IN0
+x => c_o.IN1
+x => s.IN0
+x => s.IN0
+y => c_o.IN0
+y => c_o.IN0
+y => c_o.IN1
+y => s.IN1
+y => s.IN0
+y => s.IN1
+y => s.IN1
+c_i => c_o.IN1
+c_i => c_o.IN1
+c_i => c_o.IN1
+c_i => s.IN1
+c_i => s.IN1
+c_i => s.IN1
+c_i => s.IN1
+c_i => s.IN1
+mode => c_o.OUTPUTSELECT
+mode => s.OUTPUTSELECT
+c_o <= c_o.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
