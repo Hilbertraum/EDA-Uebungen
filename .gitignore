@@ -5,6 +5,7 @@
 *.qws
 *.bak
 **/db
+**/atom_netlists
 **/incremental_db
 **/output_files
 **/simulation
@@ -12,3 +13,4 @@
 *.mpf
 *.wlf
 *desktop
+*.db_info
