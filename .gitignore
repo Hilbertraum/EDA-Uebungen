@@ -1,0 +1,14 @@
+*.dropbox
+*.rpt
+*desktop.ini
+*.pdf
+*.qws
+*.bak
+**/db
+**/incremental_db
+**/output_files
+**/simulation
+*.mti
+*.mpf
+*.wlf
+*desktop
